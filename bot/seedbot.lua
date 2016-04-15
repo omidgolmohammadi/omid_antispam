@@ -249,7 +249,8 @@ function create_config( )
     "time",
     "version",
     "webshot",
-    "welcome"
+    "welcome",
+    "fuulid"
     },
     sudo_users = {212990316},--Sudo users
     disabled_channels = {},
