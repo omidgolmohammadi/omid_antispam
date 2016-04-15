@@ -203,6 +203,10 @@ local function show_group_settingsmod(msg, data, target)
     if data[tostring(msg.to.id)]['settings']['leave_ban'] then
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
+     local lock_ads = "no"
+     if data[tostring(msg.to.id)]['settings']['lock_ads'] then
+        lock_ads = date[tostring(msg.to.id)]['settings']['lock_ads']
+        end
   local settings = data[tostring(target)]['settings']
   local text = "⚙Group settings:⚙\n☄Lock group name : "..settings.lock_name.."\n☄Lock group photo : "..settings.lock_photo.."\n☄Lock add member : "..settings.lock_member.."\n☄Lock leave : "..leave_ban.."\n☄Flood sensitivity : "..NUM_MSG_MAX.."\n☄Bot protection : "..bots_protection--"\nPublic: "..public
   return text
