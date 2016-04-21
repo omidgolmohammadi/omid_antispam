@@ -1054,9 +1054,9 @@ local function run(msg, matches)
       local function callback (extra , success, result)
         local receiver = 'chat#'..msg.to.id
         if success == 0 then
-           return send_large_msg(receiver, 'مشکل:گروه با این ربات ساخنه نشده \nدر نتیجه لینک نمیدهد'
+           return send_large_msg(receiver, 'Error:Robot Can create link\nThis group is not for avast'
         end
-        send_large_msg(receiver, "Created a new link")
+        send_large_msg(receiver, "لینک جدید ساخته شد")
         data[tostring(msg.to.id)]['settings']['set_link'] = result
         save_data(_config.moderation.data, data)
       end
