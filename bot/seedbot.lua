@@ -358,110 +358,94 @@ Realm Commands:
 
 ]],
     help_text = [[
-Commands list :
-
-!kick [username|id]
-🔘You can also do it by reply
-
-!ban [ username|id]
-🔘You can also do it by reply
-
-!unban [id]
-🔘You can also do it by reply
-
-!who
-🔘Members list
-
-!modlist
-🔘Moderators list
-
-!promote [username]
-🔘Promote someone
-
-!demote [username]
-🔘Demote someone
-
+🤖 ليست دستورات مدیریت گروه :
+🚫 حذف کردن کاربر
+!kick [یوزنیم/یوزر آی دی]
+🚫 کردن کاربر ( حذف برای همیشه )
+!ban [یوزنیم/یوزر آی دی]
+🚫 حذف بن کاربر ( آن بن )
+!unban [یوزر آی دی]
+🚫 حذف خودتان از گروه
 !kickme
-🔘Will kick user
-
+🚫 حذف کاربران غیر فعال
+!kickinactive
+👥 دريافت ليست مديران گروه
+!modlist
+👥 افزودن یک مدیر به گروه
+!promote [یوزنیم]
+👥 حذف کردن یک مدير
+!demote [یوزنیم]
+📃 توضيحات گروه
 !about
-🔘Group description
-
-!setphoto
-🔘Set and locks group photo
-
-!setname [name]
-🔘Set group name
-
+📜 قوانين گروه
 !rules
-🔘Group rules
-
+🌅 انتخاب و قفل عکس گروه
+!setphoto
+🔖 انتخاب نام گروه
+!setname [نام مورد نظر]
+📜 انتخاب قوانين گروه
+!set rules [متن قوانین]
+📃 انتخاب توضيحات گروه
+!set about [متن مورد نظر]
+🔒 قفل اعضا ، نام گروه ، ربات و ...
+!lock [member|name|bots|tag|adds|badw|join|arabic|eng|sticker|leave]
+🔓 باز کردن قفل اعضا ، نام گروه و ...
+!unlock [member|name|bots|tag|adds|badw|join|arabic|eng|sticker|leave]
+📥 دريافت یوزر آی دی گروه يا کاربر
 !id
-🔘Return group id or user id
-
-!help
-🔘Get commands list
-
-!lock [member|name|bots|leave] 
-🔘Locks [member|name|bots|leaveing] 
-
-!unlock [member|name|bots|leave]
-🔘Unlocks [member|name|bots|leaving]
-
-!set rules [text]
-🔘Set [text] as rules
-
-!set about [text]
-🔘Set [text] as about
-
+📥 دریافت اطلاعات کاربری و مقام
+!info
+⚙ دریافت تنظیمات گروه 
 !settings
-🔘Returns group settings
-
+📌 ساخت / تغيير لينک گروه
 !newlink
-🔘Create/revoke your group link
-
+📌 دريافت لينک گروه
 !link
-🔘Returns group link
-
-!owner
-🔘Returns group owner id
-
-!setowner [id]
-🔘Will set id as owner
-
-!setflood [value]
-🔘Set [value] as flood sensitivity
-
+📌 دريافت لينک گروه در پی وی
+!linkpv
+🛃 انتخاب مالک گروه
+!setowner [یوزر آی دی]
+🔢 تغيير حساسيت ضد اسپم
+!setflood [5-20]
+✅ دريافت ليست اعضا گروه
+!who
+✅ دريافت آمار در قالب متن
 !stats
-🔘Simple message statistics
-
-!save [value] [text]
-🔘Save [text] as [value]
-
+〽️ سيو کردن يک متن
+!save [value] <text>
+〽️ دريافت متن سيو شده
 !get [value]
-🔘Returns text of [value]
-
+❌ حذف قوانين ، مديران ، اعضا و ...
 !clean [modlist|rules|about]
-🔘Will clear [modlist|rules|about] and set it to nil
-
-!res [username]
-🔘Returns user id
-
+♻️ دريافت يوزر آی دی یک کاربر
+!res [یوزنیم]
+🚸 دريافت گزارشات گروه
 !log
-🔘Will return group logs
-
+🚸 دريافت ليست کاربران بن شده
 !banlist
-🔘Will return group ban list
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+📝 ليست دستورات ابزار ها :
 
->>For see plugins send "!plugins"
-
-» U can use both "/" and "!" 
-
-» Only mods, owner and admin can add bots in group
-
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-» Only owner can use res,setowner,promote,demote and log commands
+🌀 تکرار متن مورد نظر شما
+!echo [متن]
+🃏 ساخت عکس نوشته
+!tex [متن]
+🃏 ساخت بارکد QR
+!qr [متن]
+⌨ انجام محاسبات ریاضی
+!calc 2+8
+🌐 جستجو در گوگل
+!google [متن]
+☀️ هواشناسی و وضعیت هوا
+!weather [نام شهر]
+🔍 دریافت پشتیبانی
+!support
+💬 راهنمای ربات (همین متن)
+!help
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+⚠️  شما ميتوانيد از ! و / استفاده کنيد. 
+⚠️  تنها مديران ميتوانند ربات ادد کنند. 
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
 
 ]]
   }
