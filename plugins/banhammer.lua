@@ -269,7 +269,7 @@ end
          	return false 
         end
         	banall_user(targetuser)
-       		return 'کاربر ['..user_id..' ] کاربر بصورت جهانی بن شد'
+       		return 'کاربر ['..user_id..' ] بصوت جهانی بن شد'
       else
 	local cbres_extra = {
 		chat_id = msg.to.id,
