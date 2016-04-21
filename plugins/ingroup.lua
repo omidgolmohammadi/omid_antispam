@@ -204,7 +204,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-  local text = "⚙Group settings⚙:\n>>قفل نام گروه: "..settings.lock_name.."\n>>قفل عکس گروه: "..settings.lock_photo.."\nقفل اضافه کردن عضو: "..settings.lock_member.."\nقفل خروج: "..leave_ban.."\nحساسیت به اسپم: "..NUM_MSG_MAX.."\nقفل اضافه کردن ربات: "..bots_protection--"\nPublic: "..public
+  local text = "⚙Group settings⚙:\n>>قفل نام گروه: "..settings.lock_name.."\n>>قفل عکس گروه: "..settings.lock_photo.."\n>>قفل اضافه کردن عضو: "..settings.lock_member.."\n>>قفل خروج: "..leave_ban.."\n>>حساسیت به اسپم: "..NUM_MSG_MAX.."\n>>قفل اضافه کردن ربات: "..bots_protection--"\nPublic: "..public
   return text
 end
 
@@ -520,7 +520,7 @@ local function set_group_photo(msg, success, result)
     save_data(_config.moderation.data, data)
     data[tostring(msg.to.id)]['settings']['lock_photo'] = 'yes'
     save_data(_config.moderation.data, data)
-    send_large_msg(receiver, 'Photo saved!', ok_cb, false)
+    send_large_msg(receiver, 'عکس تنظیم شد!', ok_cb, false)
   else
     print('Error downloading: '..msg.id)
     send_large_msg(receiver, 'Failed, please try again!', ok_cb, false)
@@ -1082,7 +1082,7 @@ local function run(msg, matches)
       data[tostring(msg.to.id)]['set_owner'] = matches[2]
       save_data(_config.moderation.data, data)
       savelog(msg.to.id, name_log.." ["..msg.from.id.."] set ["..matches[2].."] as owner")
-      local text = matches[2].." صاحب گروه شدr"
+      local text = matches[2].." صاحب گروه شد"
       return text
     end
     if matches[1] == 'setowner' and not matches[2] then
