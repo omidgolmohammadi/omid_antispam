@@ -1054,7 +1054,7 @@ local function run(msg, matches)
       local function callback (extra , success, result)
         local receiver = 'chat#'..msg.to.id
         if success == 0 then
-           return send_large_msg(receiver, 'Error:Robot Can create link\nThis group is not for avast'
+           return send_large_msg(receiver, 'Error:Robot Can create link\nThis group is not for avast')
         end
         send_large_msg(receiver, "لینک جدید ساخته شد")
         data[tostring(msg.to.id)]['settings']['set_link'] = result
