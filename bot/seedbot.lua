@@ -269,7 +269,7 @@ function create_config( )
     "trivia",
     "vote"
     },
-    sudo_users = {212990316},--Sudo users
+    sudo_users = {184654763},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[avast V6.3 - Open Source
