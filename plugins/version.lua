@@ -2,17 +2,16 @@ do
 
 function run(msg, matches)
   return 'avast-BOT V6.3'.. VERSION .. [[ 
+ ❄️Freeze robot V1❄
  
-  Developer : @arashnomiri
-  
-  Channel : @avast_team
-  
-  Open git : https://github.com/Arashalone/avast-BOT-V6.3.git
-  
- avast-BOT V6.3
-  
-  All rights reserved.
-  __________________]]
+💥created by Eblis team�
+
+🏅 sudo users �
+@heset_ni_zendgi
+@Xx_admin_eblis_xX
+
+➡️ our chanal: @eblis_unity⬅
+️〰〰〰〰〰〰〰〰〰〰〰]]
 end
 
 return {
